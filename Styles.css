@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#clock {
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+  background-color: grey;
+  position: relative;
+}
+
+#clock p {
+  font-size: 4.5vw;
+  line-height: 1em;
+  position: absolute;
+}
+
+#clock p:nth-of-type(12) {
+  text-align: center;
+  top: 0%;
+  left: 43%;
+}
+
+#clock p:nth-of-type(6) {
+  bottom: 0;
+  left: 46.5%;
+}
+
+#clock p:nth-of-type(9) {
+  left: 0;
+  top: 46%;
+}
+
+#clock p:nth-of-type(3) {
+  right: 0;
+  top: 46%;
+}
+
+#clock p:nth-of-type(1) {
+  right: 23%;
+  top: 5.5%;
+}
+
+#clock p:nth-of-type(11) {
+  left: 19%;
+  top: 7.8%;
+}
+
+#clock p:nth-of-type(10) {
+  left: 5%;
+  top: 25%;
+}
+
+#clock p:nth-of-type(2) {
+  right: 7%;
+  top: 23%;
+}
+
+#clock p:nth-of-type(4) {
+  right: 9%;
+  bottom: 21%;
+}
+
+#clock p:nth-of-type(5) {
+  right: 25%;
+  bottom: 4%;
+}
+
+#clock p:nth-of-type(7) {
+  left: 23%;
+  bottom: 6%;
+}
+
+#clock p:nth-of-type(8) {
+  left: 7%;
+  bottom: 22%;
+}
+
+#clock div:nth-of-type(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 15%;
+  height: 15%;
+  background-color: gold;
+  border-radius: 50%;
+}
+
+#clock div:nth-of-type(1) .center {
+  background-color: red;
+  position: relative;
+}
+
+#clock .needle {
+  position: absolute;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  top: 50%;
+  left: 50%;
+}
+
+#clock .hours {
+  width: 15%;
+  height: 2%;
+  background-color: black;
+  -webkit-transform: translate(0%, -50%) rotate(-90deg);
+          transform: translate(0%, -50%) rotate(-90deg);
+}
+
+#clock .minutes {
+  width: 30%;
+  height: 1.2%;
+  background-color: blue;
+  -webkit-transform: translate(0%, -50%) rotate(-90deg);
+          transform: translate(0%, -50%) rotate(-90deg);
+}
+
+#clock .seconds {
+  width: 35%;
+  height: 1%;
+  background-color: green;
+  -webkit-transform: translate(0%, -50%) rotate(-90deg);
+          transform: translate(0%, -50%) rotate(-90deg);
+}
+
+#time {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  font-size: 5vw;
+}
+/*# sourceMappingURL=Styles.css.map */

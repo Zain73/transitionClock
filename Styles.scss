@@ -1,0 +1,131 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#clock {
+    width:40vw;
+   height:40vw;
+    border-radius:50%;
+    background-color: grey;
+    position: relative;
+    
+    p {
+        font-size:4.5vw;
+        line-height:1em;
+        position: absolute;
+    }
+
+    p:nth-of-type(12) {
+        text-align: center;
+        top:0%;
+        left:43%;
+    } 
+
+    p:nth-of-type(6) {
+        bottom:0;
+        left:46.5%;
+    }
+
+    p:nth-of-type(9) {
+        left:0;
+        top:46%;
+    }
+
+    p:nth-of-type(3) {
+        right:0;
+        top:46%;
+    }
+
+    p:nth-of-type(1) {
+        right:23%;
+        top:5.5%;
+    }
+
+    p:nth-of-type(11) {
+        left:19%;
+        top:7.8%;
+    }
+
+    p:nth-of-type(10) {
+        left:5%;
+        top:25%;
+    }
+
+    p:nth-of-type(2) {
+        right:7%;
+        top:23%;
+    }
+
+    p:nth-of-type(4) {
+        right:9%;
+        bottom:21%;
+    }
+
+    p:nth-of-type(5) {
+        right:25%;
+        bottom:4%;
+    }
+    
+    p:nth-of-type(7) {
+        left:23%;
+        bottom:6%;
+    }
+
+    p:nth-of-type(8) {
+        left:7%;
+        bottom:22%;
+    }
+
+    div:nth-of-type(1) {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        width:15%;
+       height:15%;
+        background-color: gold;
+        border-radius: 50%;
+
+        .center {
+            background-color: red;
+            position: relative;
+        }
+    }
+
+    .needle {
+        position: absolute;
+        transform-origin: left center;
+        top:50%;
+        left:50%;
+    }
+
+    .hours {
+        width:15%;
+        height:2%;
+        background-color: black;
+        transform: translate(0%, -50%) rotate(-90deg);
+    }
+
+    .minutes {
+        width:30%;
+        height:1.2%;
+        background-color: blue;
+        transform: translate(0%, -50%) rotate(-90deg);
+    }
+
+    .seconds {
+        width:35%;
+        height:1%;
+        background-color: green;
+        transform: translate(0%, -50%) rotate(-90deg);
+    }
+}
+
+#time {
+    position: absolute;
+    top:20%;
+    right:20%;
+    font-size:5vw;
+}
